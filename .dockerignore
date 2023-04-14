@@ -1,0 +1,8 @@
+# build files
+node_modules/
+
+# config files
+__tests__/
+.vscode/
+Dockerfile
+jest.config.js
