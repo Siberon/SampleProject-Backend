@@ -125,6 +125,9 @@ exports.otp = async (req, res, next) => {
 				message: "OTP is correct!",
 			});
 		}
+		return res.status(500).json({
+			message: "OTP is wrong",
+		});
 	} catch (err) {
 		next(err);
 	}

@@ -38,7 +38,7 @@ app.get("*", (_, res) =>
 	})
 );
 
-app.listen(process.env.PORT || 8080, async () => {
+app.listen(process.env.PORT || 777, async () => {
 	try {
 		// await sequelize.authenticate();
 		await mongoose.connect(
@@ -48,8 +48,8 @@ app.listen(process.env.PORT || 8080, async () => {
 				useNewUrlParser: true,
 			}
 		);
-		console.log("Connected to db & Server is running on port 3000");
+		console.log("Connected to db & Server is running on port 777");
 	} catch (error) {
-		console.error("Unable to connect to the database:", error);
+		console.error("Unable to connect to the database, COULD BE YOU ARE CONNECTED TO AIA CORP WIFI :(", error);
 	}
 });
